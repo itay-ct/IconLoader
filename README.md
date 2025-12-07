@@ -2,6 +2,8 @@
 
 A Python tool that creates a searchable vector database of Lucide icons using semantic embeddings.
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/IconLoader/blob/main/IconLoader.ipynb)
+
 ## Features
 
 - Fetches icon metadata from the Lucide GitHub repository
@@ -15,7 +17,20 @@ A Python tool that creates a searchable vector database of Lucide icons using se
 - Redis instance (local or cloud-hosted)
 - Internet connection (to fetch icon metadata and download the embedding model)
 
-## Installation
+## Quick Start Options
+
+### Option 1: Google Colab (Easiest - No Setup Required!)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/IconLoader/blob/main/IconLoader.ipynb)
+
+1. Click the badge above or open `IconLoader.ipynb` in Google Colab
+2. Run the cells in order
+3. Enter your Redis URL when prompted
+4. Upload your `icons.txt` file or use the default icon list
+
+See [COLAB_GUIDE.md](COLAB_GUIDE.md) for detailed instructions.
+
+### Option 2: Local Python Script
 
 1. Clone this repository:
 ```bash
@@ -38,11 +53,9 @@ cp .env.example .env
 REDIS_URL=redis://default:your_password@your-redis-host.com:6379
 ```
 
-## Usage
+5. Add icon slugs to `icons.txt` (one per line)
 
-1. Add icon slugs to `icons.txt` (one per line)
-
-2. Run the loader:
+6. Run the loader:
 ```bash
 python IconLoader.py
 ```
