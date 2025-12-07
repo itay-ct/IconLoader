@@ -16,9 +16,10 @@ Create a searchable vector database of Lucide icons using semantic embeddings. R
 1. **Click the badge above** to open in Google Colab
 2. **Run Step 1** - Enter your Redis URL when prompted
 3. **Run Step 2** - Check what icons are already indexed
-4. **Run Step 3** (optional) - Upload `icons.txt` to update icons, or skip to use existing
-5. **Run Step 4** - Configure test cases with expected results
-6. **Run Step 5** - Execute tests and see detailed report
+4. **Run Step 3** - See how embedding works (demo with 'beer' icon)
+5. **Run Step 4** (optional) - Upload `icons.txt` to update icons, or skip to use existing
+6. **Run Step 5** - Configure test cases with expected results
+7. **Run Step 6** - Execute tests and see detailed report
 
 ## Workflow
 
@@ -31,14 +32,21 @@ Create a searchable vector database of Lucide icons using semantic embeddings. R
 - Shows what's already indexed
 - Tells you if you can skip to testing
 
-### Step 3: Update Icons (Optional)
+### Step 3: How It Works - Demo
+- Fetches the 'beer' icon JSON from Lucide GitHub
+- Shows the description string that gets embedded
+- Displays the 384-dimensional vector (first 10 values)
+- Explains what gets stored in Redis
+- Demonstrates how vector search works
+
+### Step 4: Update Icons (Optional)
 - Upload your own `icons.txt` file, OR press Cancel to use default icons from GitHub
 - Fetches metadata from Lucide GitHub
 - Generates embeddings
 - Indexes in Redis
 - **Skip this step entirely if you just want to test existing icons**
 
-### Step 4: Configure Tests
+### Step 5: Configure Tests
 Define test cases with expected results:
 ```python
 TEST_DATASET = [
@@ -48,7 +56,7 @@ TEST_DATASET = [
 ]
 ```
 
-### Step 5: Run Tests
+### Step 6: Run Tests
 - Executes all test queries
 - Shows ✓ PASS or ✗ FAIL for each
 - Generates summary report with statistics
