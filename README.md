@@ -113,10 +113,4 @@ redis://localhost:6379
 
 - **IconLoader.ipynb** - Main Jupyter notebook
 - **icons.txt** - Sample icon list (beer, wine, trees, etc.)
-- **.env.example** - Redis URL template for reference
-- **LICENSE** - MIT License
-
-## License
-
-MIT
 
