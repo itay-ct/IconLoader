@@ -136,9 +136,9 @@ In Cell 9, change `num_results=5` to get more/fewer results
 
 ### Public Sharing
 1. Upload to GitHub
-2. Update the Colab badge URL in Cell 1:
+2. The Colab badge URL is already configured:
    ```
-   https://colab.research.google.com/github/YOUR_USERNAME/IconLoader/blob/main/IconLoader.ipynb
+   https://colab.research.google.com/github/itay-ct/IconLoader/blob/main/IconLoader.ipynb
    ```
 3. Share the GitHub link or Colab link
 

@@ -55,13 +55,11 @@
    git push
    ```
 
-2. **Update the Colab badge** in `IconLoader.ipynb`:
-   - Replace `YOUR_USERNAME` with your GitHub username
-   - Replace `IconLoader` with your repo name if different
+2. **The Colab badge is already configured** in `IconLoader.ipynb`
 
 3. **Share the link**:
    ```
-   https://colab.research.google.com/github/YOUR_USERNAME/IconLoader/blob/main/IconLoader.ipynb
+   https://colab.research.google.com/github/itay-ct/IconLoader/blob/main/IconLoader.ipynb
    ```
 
 ### For Local Jupyter
@@ -131,10 +129,7 @@ Both versions:
    - Run through all cells
    - Verify it works with your Redis
 
-2. **Update README badge**:
-   - Replace `YOUR_USERNAME` with actual GitHub username
-
-3. **Commit to GitHub**:
+2. **Commit to GitHub**:
    ```bash
    git add .
    git commit -m "Add Jupyter notebook for Google Colab support"

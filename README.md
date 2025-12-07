@@ -2,7 +2,7 @@
 
 A Python tool that creates a searchable vector database of Lucide icons using semantic embeddings.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/IconLoader/blob/main/IconLoader.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/itay-ct/IconLoader/blob/main/IconLoader.ipynb)
 
 ## Features
 
@@ -21,7 +21,7 @@ A Python tool that creates a searchable vector database of Lucide icons using se
 
 ### Option 1: Google Colab (Easiest - No Setup Required!)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/IconLoader/blob/main/IconLoader.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/itay-ct/IconLoader/blob/main/IconLoader.ipynb)
 
 1. Click the badge above or open `IconLoader.ipynb` in Google Colab
 2. Run the cells in order
