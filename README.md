@@ -47,11 +47,12 @@ Create a searchable vector database of Lucide icons using semantic embeddings. R
 - **Skip this step entirely if you just want to test existing icons**
 
 ### Step 5: Configure Tests
-Define test cases with expected results:
+Define test cases with expected results (supports multiple expected icons per query):
 ```python
 TEST_DATASET = [
-    ("Found 5 places offering a relaxing drink", "beer"),
-    ("I found 9 parks to enjoy nature", "trees"),
+    ("Found 5 places offering a relaxing drink", ["beer"]),
+    ("I found 9 parks to enjoy nature", ["trees"]),
+    ("Looking for food options", ["ice-cream-cone", "popcorn"]),  # Multiple expected icons
     # Add your test cases...
 ]
 ```
