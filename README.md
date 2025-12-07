@@ -32,11 +32,11 @@ Create a searchable vector database of Lucide icons using semantic embeddings. R
 - Tells you if you can skip to testing
 
 ### Step 3: Update Icons (Optional)
-- Upload `icons.txt` file
+- Upload your own `icons.txt` file, OR press Cancel to use default icons from GitHub
 - Fetches metadata from Lucide GitHub
 - Generates embeddings
 - Indexes in Redis
-- **Skip this step if you just want to test existing icons**
+- **Skip this step entirely if you just want to test existing icons**
 
 ### Step 4: Configure Tests
 Define test cases with expected results:
@@ -79,7 +79,7 @@ Failed:       2 (20.0%)
 
 - Google account (for Colab)
 - Redis instance (local or cloud-hosted like Redis Cloud)
-- `icons.txt` file with icon slugs (one per line) - only needed if updating icons
+- `icons.txt` file (optional - defaults to the one in this repo)
 
 ## Redis Setup
 
