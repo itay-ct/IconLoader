@@ -14,23 +14,27 @@ Create a searchable vector database of Lucide icons using semantic embeddings. R
 ## Quick Start
 
 1. **Click the badge above** to open in Google Colab
-2. **Run Step 1** - Enter Redis connection details when prompted:
+2. **Run Step 0** - Enter Redis connection details when prompted:
    - Username (required) - if starts with `redisboard-`, the suffix becomes the prefix (e.g., `redisboard-c` → prefix `c`)
    - Password (required)
    - Redis URL:Port (required, e.g., `localhost:6379`)
-3. **Run Step 2** - Check what icons are already indexed
-4. **Run Step 3** - See how embedding works (demo with 'beer' icon)
-5. **Run Step 4** (optional) - Upload `icons.txt` to update icons, or skip to use existing
-6. **Run Step 5** - Configure test cases with expected results
-7. **Run Step 6** - Execute tests and see detailed report
+3. **Run Step 1** - Install dependencies and connect to Redis
+4. **Run Step 2** - Check what icons are already indexed
+5. **Run Step 3** - See how embedding works (demo with 'beer' icon)
+6. **Run Step 4** (optional) - Upload `icons.txt` to update icons, or skip to use existing
+7. **Run Step 5** - Configure test cases with expected results
+8. **Run Step 6** - Execute tests and see detailed report
 
 ## Workflow
 
-### Step 1: Setup
-- Installs dependencies
+### Step 0: Configure
 - Prompts for Redis connection details (username, password, URL:port)
 - Auto-detects prefix from username if it starts with `redisboard-`
-- Connects to Redis
+- Displays configured index name and key prefix
+
+### Step 1: Setup
+- Installs dependencies
+- Connects to Redis using credentials from Step 0
 - Creates vector index with configured prefix
 
 ### Step 2: Check Existing Icons
